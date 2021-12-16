@@ -1,0 +1,155 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+	background-size: cover;
+	background-position: center; 
+	font-family: sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul {
+	display: inline-block;
+	list-style: none;
+}
+nav ul li {
+	display: inline-block;
+	margin: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: "Open Sans" ,sans-serif;
+	padding: 5px 25px;
+	border-radius: 15px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+nav ul li a:hover{
+	background-color: #171717;
+	color: white;
+}
+p{
+	color: #555;
+}
+.con{
+	max-width: 1300px;
+	margin: auto;
+	padding-right: 25px;
+	padding-left: 25px; 
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.foot{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+.foot p{
+	color: #8a8a8a;
+}
+.foot h3{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.fcol{
+	min-width: 250px;
+	margin-bottom: 20px;
+	flex: 1;
+	text-align: left;
+}
+.fcol img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.fcol2 {
+	flex-basis: 12%;
+	text-align: center;
+}
+ul {
+	list-style-type: none;
+}
+
+
+.main{
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat",sans-serif; 
+}
+
+.con-title{
+	background: url(cont.jpg) no-repeat center;
+	background-size: cover;
+	padding: 40px 0;
+}
+
+.con-title h1{
+	text-align: center;
+	color: #ddd;
+}
+
+.border{
+	width: 300px;
+	height: 5px;
+	margin-top: 5px;
+	background:  #ddd;
+	margin: 20px auto;
+}
+
+.contact-form{
+	max-width: 600px;
+	margin: auto;
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+.form-text{
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	border: 0;
+	background: #111;
+	padding: 20px 40px;
+	outline: none;
+	color: #ddd;
+	transition: 0.5s;
+}
+
+.form-text:focus{
+	box-shadow: 0 0 12px 6px #fff;
+}
+
+.form-submit{
+	float: right;
+	border: 0;
+	background: #34495e;
+	color: #fff;
+	padding: 12px 50px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.form-submit:hover{
+	background: #2980b9;
+}
+
+
+
+
+
