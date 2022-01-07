@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="MMS">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Cust" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="cust_id" type="xs:string">
+							</xs:element>
+							
+							<xs:element name="cust_username" type="Name_Limit">
+							</xs:element>
+							
+							<xs:element name="cust_type" type="Type">
+							</xs:element>
+						</xs:sequence>
+
+					</xs:complexType>
+					
+				</xs:element>
+				
+				<xs:element name="Staff" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="staff_id" type="xs:string">
+							</xs:element>
+							
+							<xs:element name="staff_name" type="Name_Limit">
+							</xs:element>
+							
+							<xs:element name="staff_contact" type="Contact_Number">
+							</xs:element>
+							
+							<xs:element name="staff_status" type="Status">
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+
+				</xs:element>
+
+				
+				<xs:element name="Request" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Request_id" type="xs:string">
+							</xs:element>
+							
+							<xs:element name="Cust_name"  type="xs:string">
+							</xs:element>
+							
+							<xs:element name="Request_status" type="Status">
+							</xs:element>
+							
+							<xs:element name="issue_date" type="xs:date">
+							</xs:element>
+							
+							<xs:element name="Request_Category" type="xs:string">
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+										
+
+					
+					</xs:simpleType>
+					
+					<xs:simpleType name="Name_Limit">
+						<xs:restriction base="xs:string">
+							<xs:minLength value="10"></xs:minLength>
+							<xs:maxLength value="26"></xs:maxLength>
+						</xs:restriction>
+					</xs:simpleType>
+					
+					<xs:simpleType name="Type">
+						<xs:restriction base="xs:string">
+							<xs:pattern value="shop|walk-in"></xs:pattern>
+						</xs:restriction>
+					</xs:simpleType>
+
+					<xs:simpleType name="Status">
+						<xs:restriction base="xs:string">
+							<xs:pattern value="active|unactive"></xs:pattern>
+						</xs:restriction>
+					</xs:simpleType>
+					
+					<xs:simpleType name="Contact_Number">
+						<xs:restriction base="xs:integer">
+						<xs:minInclusive value="9000000000"></xs:minInclusive>
+						<xs:maxInclusive value="9999999999"></xs:maxInclusive>
+					</xs:restriction>
+
+</xs:schema>

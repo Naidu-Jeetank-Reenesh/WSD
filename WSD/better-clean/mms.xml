@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="mms.xsl" ?>
+
+<MMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RemoteSystemsTempFiles/demo.xsd">
+  
+  <Cust>
+    <cust_id>33534</cust_id>
+    <cust_name>Naidu</cust_name>
+    <cust_type>walk-in</cust_type>
+  </Cust>
+  <Cust>
+    <cust_id>12246</cust_id>
+    <cust_name>Kumar</cust_name>
+    <cust_type>walk-in</cust_type>
+  </Cust>
+  <Cust>
+    <cust_id>21545</cust_id>
+    <cust_name>Nike</cust_name>
+    <cust_type>shop</cust_type>
+  </Cust>
+  <Cust>
+    <cust_id>046645</cust_id>
+    <cust_name>Puma</cust_name>
+    <cust_type>shop</cust_type>
+  </Cust>
+  <Cust>
+    <cust_id>65467</cust_id>
+    <cust_name>Prasad K</cust_name>
+    <cust_type>walk-in</cust_type>
+  </Cust>
+  <Cust>
+    <cust_id>456657</cust_id>
+    <cust_name>Shail Gupta</cust_name>
+    <cust_type>walk-in</cust_type>
+  </Cust>
+
+ 
+  <Staff>
+    <staff_id>1111</staff_id>
+    <staff_name>Akshay Singhal</staff_name>
+    <staff_contact>9234567890</staff_contact>
+    <staff_status>active</staff_status>
+  </Staff>
+  <Staff>
+    <staff_id>1112</staff_id>
+    <staff_name>Jai</staff_name>
+    <staff_contact>9987654321</staff_contact>
+    <staff_status>unactive</staff_status>
+  </Staff>
+  <Staff>
+    <staff_id>1113</staff_id>
+    <staff_name>Ajay</staff_name>
+    <staff_contact>9357924680</staff_contact>
+    <staff_status>active</staff_status>
+  </Staff>
+  <Staff>
+    <staff_id>1114</staff_id>
+    <staff_name>Ashli</staff_name>
+    <staff_contact>9345671098</staff_contact>
+    <staff_status>unactive</staff_status>
+  </Staff>
+  <Staff>
+    <staff_id>1115</staff_id>
+    <staff_name>Krishna</staff_name>
+    <staff_contact>9837412123</staff_contact>
+    <staff_status>unactive</staff_status>
+  </Staff>
+  <Staff>
+    <staff_id>1116</staff_id>
+    <staff_name>Arun</staff_name>
+    <staff_contact>9878322384</staff_contact>
+    <staff_status>active</staff_status>
+  </Staff>
+
+
+  <Request>
+    <Request_id>52092</Request_id>
+    <Cust_name>Nike</Cust_name>
+    <Request_status>active</Request_status>
+    <issue_date>2021-07-03</issue_date>
+    <Request_Category>C101</Request_Category>
+  </Request>
+    <Request>
+    <Request_id>52093</Request_id>
+    <Cust_name>Naidu</Cust_name>
+    <Request_status>active</Request_status>
+    <issue_date>2021-05-05</issue_date>
+    <Request_Category>C122</Request_Category>
+  </Request>
+    <Request>
+    <Request_id>52094</Request_id>
+    <Cust_name>Puma</Cust_name>
+    <Request_status>unactive</Request_status>
+    <issue_date>2021-09-21</issue_date>
+    <Request_Category>E112</Request_Category>
+  </Request>
+
+</MMS>
