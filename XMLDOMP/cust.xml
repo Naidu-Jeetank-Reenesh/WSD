@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MMS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../RemoteSystemsTempFiles/main.xsd">
+
+   <Main>
+    <Cust_ID>Sp12</Cust_ID>
+    <Cust_Name>Nike</Cust_Name>
+    <Cust_Type>shop</Cust_Type>
+    <Cust_Contact>nike@gmail.com</Cust_Contact>
+   </Main>
+
+   <Main>
+    <Cust_ID>Ct11</Cust_ID>
+    <Cust_Name>Karanjeet</Cust_Name>
+    <Cust_Type>walk-in</Cust_Type>
+    <Cust_Contact>kj@yahoo.in</Cust_Contact>
+   </Main>
+
+  <Main>
+    <Cust_ID>Sp32</Cust_ID>
+    <Cust_Name>A-One</Cust_Name>
+    <Cust_Type>shop</Cust_Type>
+    <Cust_Contact>aone@gmail.com</Cust_Contact>
+   </Main>
+
+   <Main>
+    <Cust_ID>Ct33</Cust_ID>
+    <Cust_Name>Aryan</Cust_Name>
+    <Cust_Type>walk-in</Cust_Type>
+    <Cust_Contact>An@yahoo.in</Cust_Contact>
+   </Main>
+
+  <Main>
+    <Cust_ID>Ct38</Cust_ID>
+    <Cust_Name>Chris</Cust_Name>
+    <Cust_Type>walk-in</Cust_Type>
+    <Cust_Contact>chp@gmail.com</Cust_Contact>
+  </Main>
+
+</MMS>
