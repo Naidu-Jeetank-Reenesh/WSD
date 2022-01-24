@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Login and Registration </title>
+	<link rel="stylesheet" type="text/css" href="lstyle.css">
+</head>
+<body>
+<div class="box">
+<div class="form">
+	<div class="button">
+		<div id="btn"></div>
+		<button type="button" class="toggle" onclick="login()">
+			Log In
+		</button>
+		<button type="button" class="toggle" onclick="register()">
+			Register
+		</button>
+
+	</div>
+<form class="log" action="" id="login" method="post" onsubmit="loginVal()" >
+		<input type="text" class="lfield" placeholder="Enter Email" required id="mail">
+		<input type="text" class="lfield" placeholder="Enter Password" required id="password"><br><br>
+		<button type="submit" name="submit" class="lsubmit"> Log In </button>
+</form>
+<form class="log" action="" id="register" method="post" onsubmit="RegVal()">
+		<input type="text" class="lfield " placeholder="Enter User Name" required id="name">
+		<input type="email" class="lfield" placeholder="Enter Email" required id="email">
+		<input type="number" class="lfield" placeholder="Enter Phone Number" required id="phone">
+		<input type="text" class="lfield" placeholder="Enter Password" required id="password1">
+		<input type="text" class="lfield" placeholder="Re-Enter Password" required id="password2"><br><br>
+		<button type="submit" name="submit" class="lsubmit"> Register </button>
+</form>
+
+</div>
+</div>
+<script type="text/javascript">
+	var x = document.getElementById("login");
+	var y = document.getElementById("register");
+	var z = document.getElementById("btn");
+
+	function register(){
+		x.style.left = "-400px";
+		y.style.left = "50px";
+		z.style.left = "110px";
+	}
+
+	function login(){
+		x.style.left = "50px";
+		y.style.left = "400px";
+		z.style.left = "0px";
+	}
+
+
+    function loginVal(){
+		var mail = document.getElementById('mail')
+    	var pword = document.getElementById('password')
+
+		var mailcheck = /^\w+([\.-]?\w+)+@(orion.in|orion.com)$/
+
+			if (!mailcheck.test(mail.value)) {
+                alert("Invalid Email")
+				alert("Only official mail allowed")
+                return
+        	}
+        
+		var passcheck = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/
+            if (!passcheck.test(pword.value)) {
+                alert("Password Criteria not met")
+				alert("Please include atleast 1 Uppercase Char, 1 Lowercase Char, 1 Number, 1 Special Character and minimum length should be 8 characters.")
+                return
+        	}
+		alert("Welcome User")
+	}
+
+	function RegVal(){
+		var name = document.getElementById('name')
+        var email = document.getElementById('email')
+        var phone = document.getElementById('phone')
+        var password1 = document.getElementById('password1')
+        var password2 = document.getElementById('password2')
+
+		var uname = /^[a-zA-Z ]*$/;
+            if (!uname.test(name.value)) {
+                alert("Name must only consist of Characters")
+				alert("Numbers are not permitted")
+                return
+            }
+	
+		var emailid = /^\w+([\.-]?\w+)+@(orion.in|orion.com)$/
+            if (!emailid.test(email.value)) {
+                alert("Invalid Email")
+				alert("Only official mail allowed")
+                return
+            }
+    
+		var phnumber = /[0-9]{10,10}/
+            if (!phnumber.test(phone.value)) {
+                alert("Phone Number can only consist of 10 digits")
+                return
+            }
+
+        var psword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[~`!@#$%^_+={}|:"<>,.?])[A-Za-z\d@$!%*?&]{8,}$/
+            if (!psword.test(password1.value)) {
+                alert("Password Criteria not met")
+				alert("Please include atleast 1 Uppercase Char, 1 Lowercase Char, 1 Number, 1 Special Character and minimum length should be 8 characters.")
+                return
+            }
+		
+		alert("Registered")
+	}
+
+</script>
+
+
+</body>
+</html>
