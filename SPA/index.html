@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp" ng-controller="mycntrl"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <script src="spa.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav style="margin-left: 30vw;">
+            <ul class="navlinks">
+                <li><a href="#/home">Home</a></li>
+                <li><a href="#/about"></a></li>
+                <li><a href="#/staff">staff</a></li>
+            </ul>
+        </nav>
+        <td class="mainContent">
+            <ng-view></ng-view>
+        </td>
+    </header>
+</body>
+</html>
