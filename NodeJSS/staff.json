@@ -1,0 +1,12 @@
+{"staff":[
+    {"id":1, "name":"Nihal", "age":21,"category":"Cleaner", "salary":2000, "status":"available"},
+    {"id":2, "name":"Shreya", "age":23,"category":"Electrician", "salary":3000, "status":"available"},
+    {"id":3, "name":"Sumera", "age":22,"category":"Cleaner", "salary":2400, "status":"available"},
+    {"id":4, "name":"Priya", "age":32,"category":"Electrician", "salary":1800, "status":"busy"},
+    {"id":5, "name":"Ricky", "age":45,"category":"Cleaner", "salary":2000, "status":"available"},
+    {"id":6, "name":"Vikram", "age":41,"category":"Electrician", "salary":1200, "status":"available"},
+    {"id":7, "name":"Ratan", "age":39,"category":"Electrician", "salary":1000, "status":"busy"},
+    {"id":8, "name":"Rishika", "age":27,"category":"Cleaner", "salary":1500, "status":"busy"},
+    {"id":9, "name":"Teja", "age":30,"category":"Cleaner", "salary":2300, "status":"available"},
+    {"id":10, "name":"Charit", "age":47,"category":"Cleaner", "salary":3100, "status":"busy"}
+]}
